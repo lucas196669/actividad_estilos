@@ -1,0 +1,4 @@
+@mixin flex-alineado($posicion) {
+  display: flex;
+  justify-content: $posicion;
+}

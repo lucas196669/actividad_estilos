@@ -1,0 +1,7 @@
+{
+  "name": "proyecto-ionic-7-1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}

@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.contenedor-imagen {
+  @include flex-alineado(center);
+
+  .imagen {
+    border: $grosor-borde solid $color-borde;
+    max-width: 200px;
+  }
+}

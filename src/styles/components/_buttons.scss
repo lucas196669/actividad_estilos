@@ -1,0 +1,9 @@
+@use '../abstracts' as *;
+
+.contenedor-boton {
+  @include flex-alineado(flex-end);
+
+  .boton-azul {
+    --background: #{$color-boton};
+  }
+}

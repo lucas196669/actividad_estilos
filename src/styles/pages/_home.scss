@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.titulo {
+  color: $color-titulo;
+  text-transform: uppercase;
+  text-align: center;
+}
