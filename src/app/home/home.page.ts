@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent, IonButton } from '@ionic/angular';
-
-@Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  // En Angular standalone hay que importar cada componente de Ionic que se usa en la plantilla (IonButton incluido)
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent, IonButton],
-})
 export class HomePage {
-  constructor() {}
+  // URL de la imagen que se muestra; se genera al cargar la página
+  imagenUrl: string = this.nuevaImagen();
+
+  // El parámetro random con un número distinto evita que el navegador reutilice la imagen en caché
+  nuevaImagen(): string {
+    return `https://picsum.photos/200?random=${Math.random()}`;
+  }
+
+  // Se llama al pulsar el botón para cambiar la imagen
+  cambiarImagen(): void {
+    this.imagenUrl = this.nuevaImagen();
+  }
 }

@@ -10,3 +10,12 @@
 <div class="contenedor-imagen">
   <img class="imagen" src="assets/icon/favicon.png" alt="Imagen de ejemplo" />
 </div>
+
+
+<!-- (click) ejecuta cambiarImagen() del componente al pulsar -->
+<ion-button class="boton-azul" (click)="cambiarImagen()">Aceptar</ion-button>
+
+...
+
+<!-- [src] es property binding de Angular: enlaza la imagen con la variable imagenUrl -->
+<img class="imagen" [src]="imagenUrl" alt="Imagen aleatoria" />
