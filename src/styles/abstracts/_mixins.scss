@@ -1,3 +1,4 @@
+// Mixin reutilizable: alinea horizontalmente con flexbox según el parámetro
 @mixin flex-alineado($posicion) {
   display: flex;
   justify-content: $posicion;
